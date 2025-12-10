@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/kiromaged/ci-demo-java'
+                git branch: 'main', url: 'https://github.com/kiromaged/ci-demo-java.git'
             }
         }
 
